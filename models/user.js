@@ -48,6 +48,10 @@ module.exports = (sequelize, DataTypes) => {
         validate: {
           notEmpty: { msg: "age is required" },
           notNull: { msg: "age is required" },
+          isInt: {
+            args: true,
+            msg: "age must be an integer",
+          },
         },
       },
     },

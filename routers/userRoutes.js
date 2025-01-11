@@ -1,10 +1,12 @@
 const express = require("express");
 const UserController = require("../controllers/userController");
 const logMiddleware = require("../middlewares/logger");
+const validateInput = require("../middlewares/validateInput");
+
 const router = express.Router();
 
 router.use(logMiddleware);
-router.post("/", UserController.addUser);
+router.post("/", validateInput, UserController.addUser);
 router.get("/", UserController.getUsers);
 router.get("/:id", UserController.getUserById);
 router.put("/:id", UserController.updateUser);
