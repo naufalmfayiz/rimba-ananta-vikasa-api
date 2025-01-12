@@ -37,21 +37,25 @@ cd <repository-folder>
 npm install
 ```
 
-### **3. Buat Database**
+## **3. Konfigurasi Koneksi ke Database**
+
+Pada ./config/config.json sesuaikan dengan database lokal
+
+## **4. Buat Database**
 
 ```bash
 npx sequelize-cli db:create
 npx sequelize-cli db:create --env test
 ```
 
-### **4. Migrasi**
+### **5. Migrasi**
 
 ```bash
 npx sequelize-cli db:migrate
 npx sequelize-cli db:migrate --env test
 ```
 
-### **5. Jalankan Server**
+### **6. Jalankan Server**
 
 ```bash
 npm run dev
