@@ -56,3 +56,9 @@ npx sequelize-cli db:migrate --env test
 ```bash
 npm run dev
 ```
+
+## **Pengujian**
+
+```bash
+npm test
+```
