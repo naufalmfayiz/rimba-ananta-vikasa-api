@@ -23,7 +23,7 @@ function errorHandler(err, req, res, next) {
 
     default:
       status = 500;
-      message = "Internal Server Error";
+      message = ["Internal Server Error"];
       break;
   }
 
